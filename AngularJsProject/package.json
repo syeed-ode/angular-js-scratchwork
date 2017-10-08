@@ -1,28 +1,24 @@
-{"angularjsproject": 1, "name": "package.json"},
-        
 {
     "name": "angularjsproject",
     "version": "1.0.0",
     "description": "angularjsproject",
-    "main": "index.js",
+    "main": "./server.js",
     "keywords": [
         "Syeed",
         "Ode",
         "Node.js"
     ],
     "author": {
-        "name":"Syeed Ode",
-        "email":"sy_ode@yahoo.com"
+        "name": "Syeed Ode",
+        "email": "sy_ode@yahoo.com"
     },
-    
     "engines": {
-        "node":"v8.6.0",
+        "node": "v8.6.0",
         "npm": "5.3.0"
     },
-    
     "dependencies": {
-        "express" : "~3.4.4",
-        "mongoose" : "*",
+        "express": "~3.4.4",
+        "mongoose": "*",
         "atob": "*",
         "btoa": "*",
         "node-rest-client": "*",
@@ -34,6 +30,7 @@
     },
     "bundleDependencies": [],
     "private": true,
-    "main": "./server.js",
-    "bugs": { "url": "null" }
+    "bugs": {
+        "url": "null"
+    }
 }
