@@ -18,6 +18,15 @@ helloWorldApp.config(['$routeProvider', '$locationProvider',
                 }).when('/show', {
                     templateUrl: 'partials/show.html',
                     controller: 'ShowCtrl'
+                }).when('/customer',{
+                    templateUrl: 'partials/customer.html',
+                    controller: 'CustomerCtrl'
+                }).when('/newCustomer',{
+                    templateUrl: 'partials/newCustomer.html',
+                    controller: 'AddCustomerCtrl'
+                }).when('/addedCustomer/:customer/:city',{
+                    templateUrl: 'partials/addedCustomer.html',
+                    controller: 'AddedCustomerCtrl'
                 });
 
         $locationProvider.html5Mode(false).hashPrefix('!');
