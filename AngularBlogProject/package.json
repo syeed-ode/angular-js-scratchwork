@@ -1,8 +1,24 @@
 {
     "name": "AngularBlogProject",
     "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
     "author": "syeedode",
     "contributors": [],
-    "dependencies": {}
+    "dependencies": {
+        "karma-cli": "^1.0.1"
+    },
+    "devDependencies": {
+        "karma": "*",
+        "karma-chrome-launcher": "*",
+        "karma-firefox-launcher": "*",
+        "karma-jasmine": "*",
+        "karma-junit-reporter": "*",
+        "karma-coverage": "*"
+    }
 }
