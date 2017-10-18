@@ -8,13 +8,19 @@ var blogApp = angular.module('blogApp', [
 blogApp.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider){
         $routeProvider
-                .when('/',{
+                .when('/list', {
+                    templateUrl: 'partials/main.html',
+                    controller: 'ListBlogCtrl'
+                }).when('/',{
                     templateUrl: 'partials/main.html',
                     controller: 'BlogCtrl'
                 }).when('/blogPost/:id',{
                     templateUrl: 'partials/blogPost.html',
                     controller: 'BlogViewCtrl'
-                });
+                }).when('/blogPostRest/:id', {
+                    templateUrl: 'partials/blogPost.html',
+                    controller: 'RestBlogViewCtrl'
+        });
         
         $locationProvider.html5Mode(false).hashPrefix('!');
     }

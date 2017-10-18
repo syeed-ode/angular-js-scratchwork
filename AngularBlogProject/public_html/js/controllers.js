@@ -35,6 +35,21 @@ blogControllers.controller('BlogCtrl',['$scope',
         
 }]);
 
+blogControllers.controller('ListBlogCtrl', 
+    ['$scope', 
+    'BlogList',
+    function ListBlogCtrl($scope, BlogList) {
+        BlogList.get({},
+            function success(response) {
+                console.log("Success:" + JSON.stringify(response));
+                $scope.blogList = response;
+            },
+            function error(errorResponse) {
+                console.log("I got this Error:" + JSON.stringify(errorResponse));
+            }
+        );
+}]);
+
 blogControllers.controller('BlogViewCtrl',
     ['$scope', '$routeParams',
      function BlogViewCtrl($scope, $routeParams){
@@ -73,4 +88,22 @@ blogControllers.controller('BlogViewCtrl',
          } else if(blogId === '2') {
              $scope.blogEntry = blog2;
          }
+}]);
+
+blogControllers.controller('RestBlogViewCtrl',
+    ['$scope', 
+    '$routeParams', 
+    'BlogPost',
+    function RestBlogViewCtrl($scope, $routeParams, BlogPost) {
+        var blogId = $routeParams.id;
+        
+        BlogPost.get({id: blogId},
+            function success(response) {
+                console.log("Success:" + JSON.stringify(response));
+                $scope.blogEntry = response;
+            },
+            function error(errorResponse) {
+                console.log("Error:" + JSON.stringify(errorResponse));
+            }
+        );
 }]);
