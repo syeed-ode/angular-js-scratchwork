@@ -1,0 +1,20 @@
+/* 
+    Created on : Nov 5, 2017, 11:04:39 AM
+    Author     : syeedode
+*/
+
+body {
+    font-family: Ariel, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.geotext, form {
+    padding: 5px;
+}
+
+div#map {
+    margin: 5px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}

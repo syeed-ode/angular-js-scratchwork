@@ -17,6 +17,9 @@ blogApp.config(['$routeProvider', '$locationProvider',
                 }).when('/blogPost/:id',{
                     templateUrl: 'partials/blogPost.html',
                     controller: 'BlogViewCtrl'
+                }).when('/rest',{
+                    templateUrl: 'partials/main.html',
+                    controller: 'RestBlogCtrl'
                 }).when('/blogPostRest/:id', {
                     templateUrl: 'partials/blogPost.html',
                     controller: 'RestBlogViewCtrl'
