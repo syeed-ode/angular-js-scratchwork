@@ -1,0 +1,18 @@
+/* 
+    Created on : Nov 6, 2017, 19:42:02
+    Author     : syeedode
+*/
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div#sales {
+    background-color: #d9d9d9;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    border: 1p solid #d9d9d9;
+}
