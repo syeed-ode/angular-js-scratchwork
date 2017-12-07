@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mighty Gumball (JSON)</title>
+        <meta charset="utf-8">
+        <script src="../../js/gumballWithJSONP/elementsForGumball.js"></script>
+        <script src="../../js/gumballWithJSONP/gumball.js"></script>
+        <script src="http://wickedlysmart.com/hfhtml5/chapter6/dog.js"></script>
+        <script>
+            function animalSays(type, sound) {
+                alert(type + " says " + sound);
+            }
+        </script>
+        <script src="http://wickedlysmart.com/hfhtml5/chapter6/dog2.js"></script>
+        <script src="http://www.wickedlysmart.com/hfhtml5/chapter6/cat2.js"></script>
+        <script>
+            function animalSays(animal) {
+                alert(animal.type + " says " + animal.sound);
+            }
+        </script>
+        <script src="http://wickedlysmart.com/hfhtml5/chapter6/dog3.js"></script>
+        <script src="http://www.wickedlysmart.com/hfhtml5/chapter6/cat3.js"></script>
+        <link rel="stylesheet" href="../../css/gumball.css">
+    </head>
+    <body>
+        <h1>Mighty Gumball Sales</h1>
+        <div id="sales"></div>
+        <script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+    </body>
+</html>
