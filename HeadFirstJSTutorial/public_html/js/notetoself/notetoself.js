@@ -25,6 +25,7 @@ function addStickyToDom(stickyValue) {
     stickiesUnstructuredListElement.appendChild(stickyListItemElement);
 }
 
+/** pg472 **/
 function createSticky() {
     var noteTextFormValue = document.getElementById(INPUT_ELEMENT_ID_TEXT).value;
     var key = STICKY + "_" + localStorage.length;
