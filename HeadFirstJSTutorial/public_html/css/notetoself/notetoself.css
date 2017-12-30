@@ -18,6 +18,15 @@ form input#note_text {
 form input#add_button {
 	font-size: 200%;
 }
+label#color_label {
+	font-size: 200%;
+}
+select#note_color {
+	font-size: 200%;
+}
+label#text_label {
+	font-size: 200%;
+}
 
 /* sticky note */
 

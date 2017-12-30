@@ -7,3 +7,5 @@ var STICKY = "sticky";
 var LIST_ITEM_ELEMENT = "li";
 var SPAN_ELEMENT = "span";
 var CLASS_ATTRIBUTE = "class";
+var STICKY_ARRAY = "stickiesArray";
+var ID_ATTRIBUTE = "id";
